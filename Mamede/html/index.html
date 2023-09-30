@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/htmls/Mamede/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>TESTES DE JAVASCRIPT</h1>
+        </nav>
+    </header>
+
+    <section class="sec1">
+        <div id="funcao">
+            <form>
+                    <input id="valor" type="number">
+            </form>
+            <form>
+                <button type="button" onclick="verificarNumero()">EXECUTAR</button>
+        </form>
+        </div>
+    </section>
+
+    <section class="sec2">
+        <div>
+            <h1 id="res"></h1>
+        </div>
+    </section>
+
+</body>
+</html>
+
+<script>
+    
+    function verificarNumero() {
+            // Pegar o valor do input
+            var numero = parseFloat(document.getElementById("valor").value);
+
+            // Verificar se o número é positivo, negativo ou igual a zero
+            if (numero > 0) {
+                document.getElementById("res").innerHTML = "O número é positivo.";
+            } else if (numero < 0) {
+                document.getElementById("res").innerHTML = "O número é negativo.";
+            } else {
+                document.getElementById("res").innerHTML = "O número é igual a zero.";
+            }
+        }
+
+</script>

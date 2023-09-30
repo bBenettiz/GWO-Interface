@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="/htmls/GWO.trabalho/css/entrada.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>TaskFlow</h1>
+            <ul>
+                <li><a href="entrada.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2>Entre</h2>
+        <form>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <ul>
+                <h4><a id="login" href="logado.html">Entrar </a></h4>
+                <p>Não tem cadastro?  <a type="submit" href="cadastro.html"><b>Cadastrar</b></a></p>
+            </ul>
+
+        </form>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2023 Gerenciador de Tarefas</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    function displayMessage() {
+      alert("Faça o login para vizualizar suas tarefas");
+    }
+
+
+        // Obtém o nome da página atual
+        var paginaAtual = window.location.href.split('/').pop();
+
+        // Remove a extensão da página, se houver
+        paginaAtual = paginaAtual.replace('.html', '');
+
+        // Define a classe 'highlight' para o botão da página atual
+        var botaoAtual = document.getElementById(paginaAtual);
+        if (botaoAtual) {
+            botaoAtual.classList.add('highlight');
+        }
+    
+  </script>
